@@ -56,17 +56,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $td[i].addEventListener('mousedown', (e) => {
           brush = true;
           if (brush) {
-          e.target.style.backgroundColor = colorValue.value;
-          }
-            // e.target.style.backgroundColor = colorValue.value;
-            for (var i = 0; i < $td.length; i++) {
-              $td[i].addEventListener('mousemove', (e) => {
-                if (brush) {
+            e.target.style.backgroundColor = colorValue.value;
+          };
+          for (var i = 0; i < $td.length; i++) {
+            $td[i].addEventListener('mousemove', (e) => {
+              if (brush) {
                 e.target.style.backgroundColor = colorValue.value;
-                }
-                // e.target.style.backgroundColor = colorValue.value;
-              });
-            };
+              };
+            });
+          };
         });
       };
       for (var i = 0; i < $td.length; i++) {
@@ -75,6 +73,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
       };
   };
-
 
 });
