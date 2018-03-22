@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png"href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <title>Pixel Art Maker</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">pixel art maker</h1>
+    </header>
+
+    <main class="main-container">
+      <div id="ui-container">
+        <form id="">
+          Grid Height:
+          <input id="inputHeight"type="number" name="height" value="1" min="1">
+          Grid width:
+          <input id="inputWidth"type="number" name="width" value="1" min="1">
+
+          <input type="submit" id="grid-maker" value="Submit">
+
+        </form>
+        <button id="eraser"  name="eraser" value=""><i class="fas fa-eraser"></i></button>
+      </div>
+
+      <div class="color-container">
+        <h2>pick a color</h2>
+        <input id="color-picker"type="color" name="" value="">
+      </div>
+
+      <h2 id="canvas-heading">design canvas</h2>
+      <table id="board-container"></table>
+      <script type="text/javascript" src="app.js"></script>
+    </main>
+  </body>
+</html>

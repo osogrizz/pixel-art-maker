@@ -1,0 +1,122 @@
+/*
+Global style rules
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  /* background: linear-gradient(45deg, blue, gray); */
+  text-align: center;
+}
+
+
+/*
+Header section
+ */
+
+
+header {
+  width: 100%;
+  text-align: center;
+
+}
+#title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+#ui-container {
+  font-family: 'open sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#ui-container input {
+  width: 6em;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 2em;
+}
+
+#grid-maker {
+  width: 100px;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid black;
+  outline: none;
+  background-color: inherit;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+.color-container {
+  text-transform: uppercase;
+}
+
+#color-picker {
+  margin: 1em;
+  text-align: center;
+}
+
+.erase {
+  display: inline-flex;
+}
+
+#eraser {
+  width: 4em;
+  /* font-size: 20px; */
+  padding: 0.37em;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 1px solid black;
+  outline: none;
+  background-color: inherit;
+}
+
+#canvas-heading {
+  text-transform: uppercase;
+}
+
+
+/*
+Main section
+*/
+
+main {
+  width: 100%;
+}
+
+#board-container {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+tr {
+  height: 20px;
+  border: 1px solid black;
+}
+
+td {
+  width: 20px;
+  border: 1px solid black;
+}
+
+.erased {
+  background-color: #ffffff;
+}
